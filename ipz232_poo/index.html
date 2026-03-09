@@ -1,32 +1,92 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новини Технологій</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Новини технологій</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
+
 <header>
-    <h1>Останні новини ІТ</h1>
+    <div class="header-inner">
+        <span class="header-tag">Технологічний вісник</span>
+        <h1 class="site-title">TECH<em>NEWS</em></h1>
+        <span class="header-date">2025</span>
+    </div>
 </header>
 
 <main>
-    <article class="news-item">
-        <h2>Штучний інтелект пише код замість програмістів?</h2>
-        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop" alt="Код на екрані">
-        <p>Нові інструменти на базі ШІ значно пришвидшують розробку програмного забезпечення, але експерти запевняють, що професія програміста залишається затребуваною.</p>
+
+    <!-- Головна новина -->
+    <article class="news-featured">
+        <div class="featured-image">
+            <img src="images/news1.jpg" alt="Штучний інтелект" onerror="this.style.background='#1a1a2e';this.alt='';this.style.minHeight='320px';this.style.display='block'"/>
+            <span class="category-label">Штучний інтелект</span>
+        </div>
+        <div class="featured-content">
+            <h2>ChatGPT отримав оновлення: тепер може бачити та чути</h2>
+            <p class="meta">12 травня 2025 &nbsp;·&nbsp; 5 хв читання</p>
+            <p class="excerpt">
+                OpenAI представила нову мультимодальну версію ChatGPT, яка здатна обробляти голосові команди у реальному часі,
+                розпізнавати зображення та вести природні розмови. Новинка вже доступна для підписників Plus.
+            </p>
+            <a href="#" class="read-more">Читати далі →</a>
+        </div>
     </article>
 
-    <article class="news-item">
-        <h2>Вихід нової версії популярного фреймворку</h2>
-        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&h=300&fit=crop" alt="Логотип React">
-        <p>Спільнота розробників активно обговорює нові фічі та покращення продуктивності у свіжому релізі улюбленого інструменту для створення веб-додатків.</p>
-    </article>
+    <div class="divider"></div>
+
+    <!-- Сітка новин -->
+    <section class="news-grid">
+
+        <article class="news-card">
+            <div class="card-image">
+                <img src="images/news2.jpg" alt="Apple Vision Pro" onerror="this.style.background='#0f3460';this.style.minHeight='200px';this.style.display='block'"/>
+                <span class="category-label">Гаджети</span>
+            </div>
+            <div class="card-content">
+                <h3>Apple Vision Pro 2: дата виходу та ціна</h3>
+                <p class="meta">10 травня 2025</p>
+                <p>Нова версія гарнітура Apple отримає легший корпус, покращені дисплеї та нижчу стартову ціну. Аналітики очікують презентацію вже цього літа.</p>
+                <a href="#" class="read-more">Читати далі →</a>
+            </div>
+        </article>
+
+        <article class="news-card">
+            <div class="card-image">
+                <img src="images/news3.jpg" alt="Електромобілі" onerror="this.style.background='#16213e';this.style.minHeight='200px';this.style.display='block'"/>
+                <span class="category-label">Авто</span>
+            </div>
+            <div class="card-content">
+                <h3>Tesla представила новий бюджетний електромобіль за $25 000</h3>
+                <p class="meta">8 травня 2025</p>
+                <p>Компанія Ілона Маска нарешті виконала обіцянку та анонсувала доступний електромобіль. Запас ходу — 450 км на одному заряді.</p>
+                <a href="#" class="read-more">Читати далі →</a>
+            </div>
+        </article>
+
+        <article class="news-card">
+            <div class="card-image">
+                <img src="images/news4.jpg" alt="Кібербезпека" onerror="this.style.background='#1b1b2f';this.style.minHeight='200px';this.style.display='block'"/>
+                <span class="category-label">Безпека</span>
+            </div>
+            <div class="card-content">
+                <h3>Масштабна кібератака на банки Європи: що відомо</h3>
+                <p class="meta">6 травня 2025</p>
+                <p>Хакери з угруповання BlackMatter атакували понад 30 фінансових установ Євросоюзу. Збитки оцінюються у сотні мільйонів євро.</p>
+                <a href="#" class="read-more">Читати далі →</a>
+            </div>
+        </article>
+
+    </section>
+
 </main>
 
 <footer>
-    <p>Виконав: Павлюк Олександр</p>
+    <p>© 2025 TechNews &nbsp;·&nbsp; Усі права захищено</p>
 </footer>
+
 </body>
 </html>
