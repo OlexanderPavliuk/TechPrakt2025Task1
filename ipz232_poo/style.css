@@ -2,8 +2,8 @@
 :root {
     --bg: #0d0d0d;
     --surface: #161616;
-    --accent: #c9a84c;
-    --accent-dim: #9a7a30;
+    --accent: #4ca8c9;
+    --accent-dim: #307a9a;
     --text: #e8e0d0;
     --text-muted: #888;
     --border: #2a2a2a;
@@ -18,8 +18,8 @@ body {
     background: var(--bg);
     color: var(--text);
     font-family: var(--font-body);
-    font-size: 17px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 img { display: block; width: 100%; height: auto; }
@@ -165,20 +165,20 @@ main {
 .news-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 24px;
 }
 
 .news-card {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 4px;
+    border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .news-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.6);
 }
 
 .card-image {
