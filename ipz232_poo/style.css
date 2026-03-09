@@ -223,3 +223,16 @@ footer {
     letter-spacing: 1px;
 }
 
+/* ===== АДАПТИВНІСТЬ ===== */
+@media (max-width: 900px) {
+    .news-featured { grid-template-columns: 1fr; gap: 28px; }
+    .news-grid { grid-template-columns: repeat(2, 1fr); }
+    .site-title { font-size: 1.8rem; }
+}
+
+@media (max-width: 600px) {
+    .news-grid { grid-template-columns: 1fr; }
+    main { padding: 32px 20px 48px; }
+    .header-inner { padding: 0 20px; }
+    .header-tag, .header-date { display: none; }
+}
